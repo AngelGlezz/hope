@@ -109,6 +109,7 @@ img {
 	float: left;
 	margin: 0px 13px;
 	cursor: pointer;
+	border-radius: 50%;
 }
 
 #first {
