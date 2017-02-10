@@ -161,7 +161,8 @@ img {
 
 #apps {
 	width: 100%;
-	height: 870px;
+	height: 820px;
+	margin-bottom: 100px;
 }
 
 #content_apps {
