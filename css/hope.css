@@ -1,5 +1,6 @@
 #page {
 	width: 100%;
+	overflow: hidden;
 }
 
 #cover {
@@ -10,8 +11,8 @@
 
 .inner {
 	width: 1000px;
-	height: 100%;
 	margin: auto;
+	height: 880px;
 }
 
 #top_bar {
@@ -36,8 +37,8 @@
 	width: 150px;
 	height: 0px;
 	float: left;
-	position: relative;
-	left: 460px;
+	position: absolute;
+	right: 0px;
 	top: 45px;
 }
 
@@ -45,6 +46,7 @@
 	width: 70px;
 	height: 70px;
 	cursor: pointer;
+	z-index: 1;
 }
 
 #main_item_content {
@@ -56,6 +58,8 @@
 	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 	padding-top: 20px;
 	display: none;
+	position: absolute;
+	right: 80px;
 }
 
 .item_main {
@@ -72,6 +76,12 @@
 
 #erp_item {
 	margin: 0px auto;
+}
+
+#contactanos {
+	margin: 0px auto;
+	padding-bottom: 0px;
+	border: none;
 }
 
 img {
@@ -128,7 +138,7 @@ img {
 
 
 #contact {
-	width: 501px;
+	width: 518px;
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
 	color: #525151;
@@ -144,6 +154,7 @@ img {
 	background-attachment: fixed;
 	padding-top: 50px;
 	position: relative;
+	overflow: hidden;
 }
 
 #job {
@@ -156,7 +167,7 @@ img {
 }
 
 #title_job {
-	width: 525px;
+	width: 554px;
 	height: 40px;
 	margin: auto;
 	color: #345b97;
@@ -192,7 +203,7 @@ img {
 }
 
 .item_title {
-	width: 201px;
+	width: 216px;
 	height: 20px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
@@ -205,12 +216,12 @@ img {
 }
 
 .item_text {
-	width: 340px;
+	width: 341px;
 	height: 77px;
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	margin-left: 150px;
+	margin-left: 140px;
 	color: #fff;
 	font-weight: 300;
 }
@@ -234,10 +245,10 @@ img {
 }
 
 .item_apps {
-	width: 460px;
+	width: 46%;
 	height: 150px;
 	float: left;
-	margin: 30px 20px;
+	margin: 3% 2%;
 }
 
 .image_apps {
@@ -426,6 +437,567 @@ button {
 		width: 700px;
 		height: 109px;
 		top: 1433px;
+	}
+}
+
+@media (max-width: 1400px) {
+	#big_apps {
+		width: 650px;
+		height: 101px;
+	}
+}
+
+@media (max-width: 1300px) {
+	#big_apps {
+		width: 600px;
+		height: 94px;
+		top: 1440px;
+	}
+}
+
+@media (max-width: 1200px) {
+	#big_apps {
+		width: 550px;
+		height: 86px;
+	}
+}
+
+@media (max-width: 1100px) {
+	#big_apps {
+		width: 500px;
+		height: 79px;
+		top: 1440px;
+	}
+
+	#two_content {
+		left: 0px;
+	}
+
+	#izq {
+    	margin-right: 20px;
+	}
+
+	.item_content {
+		width: 440px;
+	}
+
+	.item_text {
+		margin-left: 110px;
+	width: 331px;
+	font-size: 13px;
+	}
+}
+
+@media (max-width: 1000px) {
+	#big_apps {
+		width: 450px;
+		height: 75px;
+		top: 1263px;
+	}
+
+	.inner {
+		width: 900px;
+	}
+
+	.icon {
+		width: 90px;
+		height: 90px;
+		margin: 0px 12px;
+	}
+
+	.image_apps {
+		width: 100px;
+		height: 100px;
+	}
+
+	.text_content_apps {
+		width: 294px;
+	}
+
+	#pic {
+		width: 350px;
+	}
+
+	#exp_content {
+		width: 500px;
+		margin-left: 50px;
+	}
+
+	#job {
+		width: 900px;
+		height: 450px;
+		margin-bottom: 50px;
+	}
+
+	#apps {
+		margin-bottom: 50px;
+	}
+
+	#interaction {
+		margin-top: 50px;
+	}
+
+	#content {
+		height: 2950px;
+	}
+
+	.input, .input input, #message, #message textarea {
+		width: 760px;
+	}
+
+	#content_icon {
+		width: 900px;
+	}
+}
+
+@media (max-width: 900px) {
+	#big_apps {
+		width: 400px;
+		height: 63px;
+		top: 1245px;
+	}
+
+	.inner {
+		width: 800px;
+	}
+
+	.icon {
+		width: 75px;
+		height: 75px;
+	}
+
+	.image_apps {
+		width: 100px;
+		height: 100px;
+	}
+
+	.text_content_apps {
+		width: 248px;
+	}
+
+	#pic {
+		width: 350px;
+	}
+
+	#exp_content {
+		width: 400px;
+		margin-left: 50px;
+	}
+
+	#job {
+		width: 800px;
+		height: 450px;
+		margin-bottom: 50px;
+	}
+
+	#apps {
+		margin-bottom: 50px;
+	}
+
+	#interaction {
+		margin-top: 50px;
+	}
+
+	#content {
+		height: 2950px;
+	}
+
+	.input, .input input, #message, #message textarea {
+		width: 660px;
+	}
+
+	#content_icon {
+	    width: 800px;
+	    height: 75px;
+	}
+
+	.item_content {
+	    width: 390px;
+	}
+
+	.item_text {
+		margin-left: 100px;
+		width: 284px;
+	}
+
+	.text_apps {
+		width: 248px;
+	}
+
+	.title_apps {
+		font-size: 23px;
+	}
+
+	#inter_text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.inner {
+		width: 700px;
+	}
+
+	#content_icon {
+	    width: 700px;
+	}
+
+	.icon {
+	    margin: 0px 7px;
+	}
+
+	#job {
+	    width: 700px;
+	    height: 450px;
+	    margin-bottom: 50px;
+	}
+
+	.item_content {
+	    width: 340px;
+	    height: 145px;
+	}
+
+	.item_title {
+		right: -30px;
+	}
+
+	.item_text {
+	    margin-left: 85px;
+	    width: 255px;
+	    font-size: 12px;
+	}
+
+	.text_content_apps {
+	    width: 202px;
+	}
+
+	.text_apps {
+	    width: 220px;
+	}
+
+	#big_apps {
+	    width: 360px;
+	    height: 56px;
+	    top: 1230px;
+	}
+
+	#pic {
+	    width: 250px;
+	}
+
+	.input, .input input, #message, #message textarea {
+	    width: 560px;
+	}
+
+	#line {
+		width: 600px;
+	}
+}
+
+@media (max-width: 700px) {
+	.inner {
+		width: 600px;
+	}
+
+	#content_icon {
+	    width: 350px;
+	    height: 200px;
+	    left: 170px;
+	    bottom: 50px;
+	}
+
+	.icon {
+	    margin: 10px 7px;
+	}
+
+	#job {
+	    width: 600px;
+	    height: 520px;
+	    margin-bottom: 50px;
+	}
+
+	.item_content {
+	    width: 390px;
+	}
+
+	#big_apps {
+	    top: 1700px;
+	    width: 290px;
+	}
+
+	#pic {
+	    float: none;
+	    margin: auto;
+	}
+
+	.input, .input input, #message, #message textarea {
+	    width: 460px;
+	}
+
+	#name {
+	    width: 600px;
+	    height: 244px;
+	    margin: auto;
+	    margin-top: 70px;
+	}
+
+	#subtitle {
+		width: 600px;
+		font-size: 27px;
+	}
+
+	#two_content {
+	    width: 390px;
+	    height: 290px;
+	    position: initial;
+	    margin: auto;
+	}
+
+	.item_apps {
+		height: 260px;
+	}
+
+	#apps {
+		height: 1190px;
+	}
+
+	#exp_title {
+		margin: auto;
+	}
+
+	#exp_text {
+		width: 400px;
+		margin: auto;
+	}
+
+	#experience {
+		height: 720px;
+		padding-top: 0px;
+	}
+
+	#exp_content {
+		margin: auto;
+		float: none;
+	}
+
+	#content {
+	    height: 3400px;
+	}
+
+	#logo {
+		width: 300px;
+		height: 35px;
+		top: 60px;
+	}
+
+	#line {
+		width: 500px;
+	}
+
+	#title_job {
+		font-size: 34px;
+	}
+}
+
+@media (max-width: 600px) {
+	.inner {
+		width: 500px;
+	}
+
+	#name {
+    	width: 500px;
+	}
+
+	#subtitle {
+    	width: 440px;
+    	font-size: 27px;
+	}
+
+	#content_icon {
+		position: initial;
+    	margin: 20px auto;
+	}
+
+	#job {
+		width: 450px;
+	}
+
+	#title_job {
+    	width: 450px;
+    }
+
+    #big_apps {
+	    top: 1700px;
+	    width: 230px;
+	    height: 37px;
+	}
+
+	#inter_text {
+	    font-size: 16px;
+	}
+
+	#interaction {
+		height: 100px;
+		padding-top: 20px;
+	}
+
+	.input, .input input, #message, #message textarea {
+	    width: 300px;
+	}
+
+	#message, #message textarea {
+	    height: 100px;
+	    text-align: center;
+	}
+
+	#content {
+	    height: 3250px;
+	}
+}
+
+@media (max-width: 600px) {
+	#logo {
+		left: 10px;
+	}
+
+	#main_content {
+		display: none;
+	}
+
+	.inner {
+		width: 300px;
+	}
+
+	#name {
+    	width: 300px;
+    	height: 105px;
+	}
+
+	#subtitle {
+    	width: 280px;
+    	font-size: 25px;
+	}
+
+	#job {
+		width: 300px;
+		height: 465px;
+	}
+
+	#title_job {
+    	width: 300px;
+    }
+
+    #contact {
+    	font-size: 23px;
+    }
+
+    .icon {
+	    width: 63px;
+	    height: 63px;
+	}
+
+	#content_icon {
+		width: 313px;
+	}
+
+	#title_job {
+	    font-size: 22px;
+	}
+
+	.item_content {
+	    width: 300px;
+	    height: 125px;
+	}
+
+	.item_title {
+	    font-size: 15px;
+	}
+
+	.item_title {
+		margin-bottom: 10px;
+	}
+
+	.item_text {
+	    margin-left: 78px;
+	    width: 227px;
+	    font-size: 10px;
+	}
+
+	#line {
+		width: 300px;
+	}
+
+	.item_apps {
+	    width: 100%;
+	    float: none;
+	    margin: 10px auto;
+	}
+
+	#apps {
+	    height: 1900px;
+	}
+
+	.text_content_apps {
+		width: 220px;
+
+	}
+
+	#big_apps {
+	    top: 650px;
+	    width: 180px;
+	    height: 29px;
+	}
+
+	#content_apps {
+		height: 1917px;
+	}
+
+	#apps > .inner {
+		height: 1917px;
+	}
+
+	.title_apps {
+	    font-size: 21px;
+	}
+
+	#exp_content, #exp_text {
+		width: 300px;
+		font-size: 16px;
+	}
+
+	#experience {
+	    height: 620px;
+	    padding-top: 0px;
+	}
+
+	#content {
+	    height: 3800px;
+	}
+
+	#inter_text {
+	    font-size: 13px;
+	}
+
+	#contact_form {
+		margin-top: 50px;
+	}
+
+	.input, .input input, #message, #message textarea {
+	    width: 190px;
+	    font-size: 14px;
+	}
+
+	.label {
+		font-size: 20px;
+		width: 90px;
+	}
+
+	#cover {
+		height: 80%;
+	}
+
+	#contact_content {
+		height: 75px;
 	}
 }
 
