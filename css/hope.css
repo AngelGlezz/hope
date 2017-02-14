@@ -705,8 +705,8 @@ button {
 
 	#content_icon {
 	    width: 350px;
-	    height: 200px;
-	    left: 170px;
+	    height: 155px;
+	    left: 155px;
 	    bottom: 50px;
 	}
 
@@ -741,7 +741,7 @@ button {
 	#name {
 	    width: 600px;
 	    height: 244px;
-	    margin: 30px auto;
+	    margin: 45px auto;
 	}
 
 	#subtitle {
@@ -858,9 +858,51 @@ button {
 	}
 }
 
-@media (max-width: 600px) {
+
+
+@media (max-height: 800px) {
+	#content_icon {
+		bottom: 40px;
+	}
+
+	#subtitle {
+		margin-top: 0px;
+	}
+
+	#name {
+		margin-bottom: 0px;
+	}
+}
+
+@media (max-height: 730px) {
+	#name {
+		width: 400px;
+		height: 163px;
+	}
+
+	#subtitle {
+		font-size: 20px;
+	}
+}
+
+@media (max-height: 590px) {
+	#name {
+	    margin: 20px auto;
+	}
+
+	#content_icon {
+		margin: 5px auto;
+		bottom: -120px;
+	}
+
+	#cover {
+		height: 150%;
+	}
+}
+
+@media (max-width: 500px) {
 	#logo {
-		left: 10px;
+		left: 0px;
 		top: 30px;
 	}
 
@@ -873,13 +915,14 @@ button {
 	}
 
 	#name {
-    	width: 300px;
-    	height: 105px;
+	    width: 300px;
+	    height: 121px;
 	}
 
 	#subtitle {
     	width: 280px;
-    	font-size: 16px;
+    	font-size: 22px;
+    	margin-top: 20px;
 	}
 
 	#job {
@@ -996,10 +1039,6 @@ button {
 		width: 90px;
 	}
 
-	#cover {
-		height: 80%;
-	}
-
 	#contact_content {
 		height: 75px;
 	}
@@ -1009,7 +1048,16 @@ button {
 	}
 }
 
+@media (max-width: 500px) and (max-height: 465px) {
+	#cover {
+		height: 150%;
+	}
 
+	#subtitle {
+    	font-size: 16px;
+    	margin-top: 0px;
+	}
+}
 
 
 
