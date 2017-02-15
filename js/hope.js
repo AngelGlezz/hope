@@ -38,4 +38,8 @@ $(document).ready(function(){
 		$(document).scrollTop(page);
 		$("#main_item_content").hide();
 	});
+
+	$("#main_content").mouseleave(function(){
+		$("#main_item_content").hide();
+	});
 });
