@@ -1102,6 +1102,12 @@ button {
 	}
 }
 
+@media (max-height: 340px) {
+	#cover {
+		height: 170%;
+	}
+}
+
 
 
 
