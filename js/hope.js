@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".main").click(function(){
+	$("#main").click(function(){
 		$("#main_item_content").show();
 	});
 
