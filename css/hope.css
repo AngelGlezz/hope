@@ -15,6 +15,7 @@
 	width: 1000px;
 	margin: auto;
 	height: 100%;
+	position: relative;
 }
 
 #top_bar {
@@ -37,18 +38,20 @@
 
 #main_content {
 	width: 150px;
-	height: 0px;
+	height: auto;
 	float: left;
 	position: absolute;
 	right: 0px;
 	top: 45px;
 }
 
-#main {
+.main, .show {
 	width: 70px;
 	height: 70px;
 	cursor: pointer;
 	z-index: 1;
+	position: absolute;
+	right: 0px;
 }
 
 #main_item_content {
@@ -61,7 +64,8 @@
 	padding-top: 20px;
 	display: none;
 	position: absolute;
-	right: 80px;
+	right: 0px;
+	top: 70px;
 }
 
 .item_main {
@@ -394,7 +398,7 @@ img {
 	margin-top: 50px;
 }
 
-button {
+#buttons {
 	width: 130px;
 	height: 50px;
 	margin: auto;
@@ -1105,6 +1109,20 @@ button {
 @media (max-height: 340px) {
 	#cover {
 		height: 170%;
+	}
+}
+
+@media (max-width: 605px) {
+	#main_item_content {
+		width: 65%;
+		height: 115px;
+		padding-top: 10px;
+	}
+
+	.item_main {
+		width: 85px;
+		font-size: 12px;
+		padding-bottom: 5px;
 	}
 }
 
