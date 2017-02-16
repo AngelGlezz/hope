@@ -38,7 +38,7 @@
 
 #main_content {
 	width: 150px;
-	height: 0px;
+	height: auto;
 	float: left;
 	position: absolute;
 	right: 0px;
@@ -1098,6 +1098,7 @@ img {
 	#main_content {
 		right: 0px;
 		top: 15px;
+		height: 195px;
 	}
 
 	#name {
