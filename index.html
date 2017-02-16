@@ -26,7 +26,7 @@
  					<div class="inner">
 		 				<div id="logo"><img src="images/hope.png"></div>
 		 				<div id="main_content">
-		 					<div id="main"><img src="images/menu.png"></div>
+		 					<div class="main"><img src="images/menu.png"></div>
 		 					<div id="main_item_content">
 		 						<div class="item_main" id="erp_item">ERP y CRM</div>
 		 						<div class="item_main" id="aplicaciones">APLICACIONES</div>
@@ -160,7 +160,7 @@
  				</div>
  				<div id="contact_form">
  					<div class="inner">
- 						<div id="form">
+ 						<div id="form" action="mail.php" method="POST" name="mail-form">
  							<form>
  								<div class="cont_data">
 	 								<div class="label">NOMBRE</div>
@@ -176,9 +176,9 @@
  								</div>
  								<div class="cont_data">
 	 								<div class="label">MENSAJE</div>
-	 								<div id="message"><textarea placeholder="Escribe aquí con detalle tu mensaje o comentario"></textarea></div>
+	 								<div id="message"><textarea placeholder="Escribe aquí con detalle tu mensaje o comentario" name="comment"></textarea></div>
  								</div>
- 								<div id="button"><button>Enviar</button></div>
+ 								<div id="button"><input type="submit" name="send" value="Enviar" id="buttons"></div>
  							</form>
  						</div>
  					</div>
