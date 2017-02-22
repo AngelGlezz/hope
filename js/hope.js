@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#main").click(function(){
-		$("#main_item_content").show();
+		$("#main_item_content").toggle();
 	});
 
 	$("#erp_item, #first").click(function(){
