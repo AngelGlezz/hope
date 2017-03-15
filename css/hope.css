@@ -14,7 +14,6 @@
 .inner {
 	width: 1000px;
 	margin: auto;
-	height: 100%;
 }
 
 #top_bar {
@@ -183,30 +182,32 @@ img {
 .item_content {
 	background-image: url(../images/palomita.png);
 	width: 500px;
-	height: 168px;
+	height: 125px;
 	float: left;
-	background-size: 100% 70%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
-#uno {
+#erp {
 	margin: auto;
 	float: none;
 }
 
 #two_content {
     width: 1050px;
-    height: 200px;
+    height: 125px;
     position: relative;
     left: -50px;
+    margin-top: 30px;
 }
 
-#izq {
+#industria {
 	margin-right: 50px;
 }
 
 .item_title {
-	width: 216px;
+	width: 232px;
 	height: 20px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
@@ -216,28 +217,33 @@ img {
 	position: relative;
 	top: 10px;
 	margin-bottom: 15px;
+	line-height: 20px;
 }
 
 .item_text {
 	width: 341px;
-	height: 77px;
+	height: 42px;
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	margin-left: 140px;
 	color: #fff;
 	font-weight: 300;
+	margin-top: 32px;
+}
+
+#erp > .item_text {
+	margin-top: 0px;
 }
 
 #apps {
 	width: 100%;
-	height: 820px;
 	margin-bottom: 100px;
 }
 
 #content_apps {
 	width: 100%;
-	height: 95%;
+	height: 855px;
 }
 
 #line {
@@ -262,15 +268,15 @@ img {
 
 .text_content_apps {
 	width: 310px;
-	height: 130px;
 	float: left;
 	margin-left: 20px;
+	margin-bottom: 15px;
 }
 
 .title_apps {
 	width: auto;
 	font-family: 'Roboto', sans-serif;
-	font-size: 29px;
+	font-size: 28px;
 	margin-bottom: 10px;
 	color: #5c5b5b;
 }
@@ -473,21 +479,24 @@ button {
 	}
 
 	#two_content {
+		width: 900px;
 		left: 0px;
+		margin: 40px auto;
 	}
 
-	#izq {
+	#industria {
     	margin-right: 20px;
 	}
 
 	.item_content {
 		width: 440px;
+		height: 118px;
 	}
 
 	.item_text {
-		margin-left: 110px;
-	width: 331px;
-	font-size: 13px;
+		margin-left: 115px;
+		width: 265px;
+		font-size: 13px;
 	}
 }
 
@@ -519,6 +528,10 @@ button {
 
 	#pic {
 		width: 350px;
+	}
+
+	.item_title {
+		margin-left: 115px;
 	}
 
 	#exp_content {
@@ -574,6 +587,10 @@ button {
 		width: 248px;
 	}
 
+	.item_title {
+    	margin-left: 88px;
+	}
+
 	#pic {
 		width: 350px;
 	}
@@ -608,11 +625,12 @@ button {
 
 	.item_content {
 	    width: 390px;
+	    height: 115px;
 	}
 
 	.item_text {
-		margin-left: 100px;
-		width: 284px;
+		margin-left: 108px;
+		width: 264px;
 	}
 
 	.text_apps {
@@ -625,6 +643,10 @@ button {
 
 	#inter_text {
 		font-size: 20px;
+	}
+
+	.item_title {
+		left: 20px;
 	}
 }
 
@@ -649,17 +671,23 @@ button {
 
 	.item_content {
 	    width: 340px;
-	    height: 145px;
+	    height: 110px;
 	}
 
 	.item_title {
-		right: -30px;
+		left: 30px;
+		font-size: 16px;
 	}
 
 	.item_text {
-	    margin-left: 85px;
-	    width: 255px;
+	    margin-left: 91px;
+	    width: 243px;
 	    font-size: 12px;
+	    margin-top: 30px;
+	}
+
+	.item_title {
+    	margin-left: 62px;
 	}
 
 	.text_content_apps {
@@ -713,6 +741,12 @@ button {
 
 	.item_content {
 	    width: 390px;
+	    height: 105px;
+	    margin-top: 30px;
+	}
+
+	#content_apps {
+	    height: 1200px;
 	}
 
 	#big_apps {
@@ -747,12 +781,16 @@ button {
 	    margin: auto;
 	}
 
-	.item_apps {
-		height: 260px;
+	.item_text {
+    	margin-left: 105px;
 	}
 
-	#apps {
-		height: 1190px;
+	.item_title {
+    	margin-left: 75px;
+	}
+
+	.item_apps {
+		height: 260px;
 	}
 
 	#exp_title {
@@ -786,6 +824,7 @@ button {
 
 	#title_job {
 		font-size: 34px;
+		text-align: center;
 	}
 }
 
@@ -930,21 +969,26 @@ button {
 
 	.item_content {
 	    width: 300px;
-	    height: 125px;
+	    height: 85px;
 	}
 
 	.item_title {
-	    font-size: 15px;
-	}
-
-	.item_title {
-		margin-bottom: 10px;
+	    font-size: 12px;
+	    margin-bottom: 10px;
+	    margin-left: 60px;
+	    width: 174px;
+	    line-height: 15px;
 	}
 
 	.item_text {
-	    margin-left: 78px;
-	    width: 227px;
+	    margin-left: 90px;
+	    width: 203px;
 	    font-size: 10px;
+	    margin-top: 20px;
+	}
+
+	#erp > .item_text {
+    	margin-top: -6px;
 	}
 
 	#line {
@@ -955,10 +999,6 @@ button {
 	    width: 100%;
 	    float: none;
 	    margin: 10px auto;
-	}
-
-	#apps {
-	    height: 1900px;
 	}
 
 	.text_content_apps {
@@ -973,11 +1013,7 @@ button {
 	}
 
 	#content_apps {
-		height: 1917px;
-	}
-
-	#apps > .inner {
-		height: 1917px;
+		height: 2070px;
 	}
 
 	.title_apps {
@@ -990,7 +1026,7 @@ button {
 	}
 
 	#experience {
-	    height: 620px;
+	    height: 690px;
 	    padding-top: 0px;
 	}
 	
