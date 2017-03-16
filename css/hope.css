@@ -98,8 +98,7 @@ img {
 #subtitle {
 	width: 690px;
 	font-family: 'Roboto', sans-serif;
-	margin: auto;
-	margin-top: 30px;
+	margin: 30px auto;
 	font-size: 31px;
 	text-align: center;
 	color: #fefefe;
@@ -109,10 +108,7 @@ img {
 #content_icon {
 	width: 982px;
 	height: 100px;
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	bottom: 100px;
+	margin: auto;
 }
 
 .icon {
@@ -750,7 +746,6 @@ button {
 	#content_icon {
 	    width: 350px;
 	    height: 155px;
-	    bottom: 50px;
 	}
 
 	.icon {
@@ -943,10 +938,6 @@ button {
 }
 
 @media (max-height: 800px) {
-	#content_icon {
-		bottom: 100px;
-	}
-
 	#subtitle {
 		margin-top: 0px;
 	}
@@ -973,7 +964,6 @@ button {
 
 	#content_icon {
 		margin: 5px auto;
-		bottom: -120px;
 		height: 140px;
 	}
 }
@@ -999,6 +989,7 @@ button {
 	#subtitle {
     	width: 280px;
     	margin-top: 20px;
+    	font-size: 16px;
 	}
 
 	#job {
@@ -1137,7 +1128,6 @@ button {
 
 	#content_icon {
     	width: 289px;
-    	bottom: -200px;
 	}
 }
 
@@ -1154,7 +1144,6 @@ button {
 
 	#content_icon {
 	    width: 289px;
-	    bottom: 10px;
 	}
 
 	#top_bar {
@@ -1206,12 +1195,6 @@ button {
 @media (max-height: 736px) and (max-width: 414px) {
 	#cover {
 		background-size: 100% 100%;
-	}
-}
-
-@media (max-height: 414px) and (max-width: 736px) {
-	#content_icon {
-		bottom: -15px;
 	}
 }
 
