@@ -404,6 +404,35 @@ img {
 	margin-top: 50px;
 }
 
+#tipe {
+	display: none;
+	width: 85%;
+	margin: 0px auto;
+	position: relative;
+}
+
+#title_tipe {
+	color: #345b97;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#intro_tipe, #complement_tipe {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+#back {
+	width: 50px;
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+}
+
 button {
 	width: 130px;
 	height: 50px;
