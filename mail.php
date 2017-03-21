@@ -19,10 +19,10 @@
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to
 
-	$mail->setFrom('angelglezz.7@gmail.com', 'Mailer');
-	$mail->addAddress('angelglezz.7@gmail.com', 'Angel');     	// Add a recipient
+	$mail->setFrom('contacto@hopesistemas.com.mx', 'Contacto');
+	//$mail->addAddress('contacto@hopesistemas.com.mx', 'Contacto');     	// Add a recipient
 	$mail->addAddress($email, $name);          						// Name is optional
-	//$mail->addReplyTo('info@example.com', 'Information');
+	$mail->addReplyTo('contacto@hopesistemas.com.mx', 'Contacto');
 	//$mail->addCC('cc@example.com');
 	//$mail->addBCC('bcc@example.com');
 

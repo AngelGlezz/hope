@@ -53,7 +53,7 @@ $(document).ready(function(){
 		$("#main_item_content").hide();
 	});
 
-	$("#erp").click(function(){
+	/*$("#erp").click(function(){
 		$("#two_content, .item_content, #title_job").hide();
 		$("#tipe, .fa").fadeIn(2000);
 		$("#title_tipe").text("ERP/CRM");
@@ -79,8 +79,8 @@ $(document).ready(function(){
 
 	$("#back").click(function(){
 		$("#two_content, .item_content, #title_job").fadeIn(2000);
-		$("#tipe").hide();
-	});
+		$("#tipe").hide(); 
+	});*/
 });
 
 
