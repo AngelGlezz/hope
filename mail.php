@@ -9,15 +9,17 @@
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
 
-	//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+	//$mail->SMTPDebug = 3;                               	// Enable verbose debug output
 
-	$mail->isSMTP();                                      // Set mailer to use SMTP
-	$mail->Host = 'smtp.gmail.com';//;  'localhost'				  	  // Specify main and backup SMTP servers
-	$mail->SMTPAuth = true;// false;                              // Enable SMTP authentication
-	$mail->Username = 'angelglezz.7@gmail.com';           // SMTP username
-	$mail->Password = 'aglezz07';                         // SMTP password
-	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-	$mail->Port = 587;                                    // TCP port to connect to
+	$mail->isSMTP();                                      	// Set mailer to use SMTP
+	$mail->Host = 'smtp.gmail.com';//'localhost'			// Specify main and backup SMTP servers
+	$mail->SMTPAuth = true;	//false;                       	// Enable SMTP authentication
+	$mail->Username = 'angelglezz.7@gmail.com';           	// SMTP username
+	$mail->Password = 'aglezz07';                         	// SMTP password
+	$mail->SMTPSecure = 'tls';                            	// Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 587;										// TCP port to connect to
+	$mail­>CharSet = "UTF­8";
+	$mail­>Encoding = "quoted­printable";                                     
 
 	$mail->setFrom('contacto@hopesistemas.com.mx', 'Contacto');
 	//$mail->addAddress('contacto@hopesistemas.com.mx', 'Contacto');     	// Add a recipient
