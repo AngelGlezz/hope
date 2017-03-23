@@ -113,6 +113,7 @@ $(document).ready(function(){
 				$('.try').html("Intentar de nuevo");
 				$('.msg').show();
 				$('.try').show();
+				$('form').hide();
 			}
 			$("#cargando").hide();
 		})
