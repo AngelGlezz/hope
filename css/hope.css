@@ -434,7 +434,13 @@ img {
 	cursor: pointer;
 }
 
-button {
+.button {
+	width: 130px;
+	height: 50px;
+	margin: auto;
+}
+
+.send-button {
 	width: 130px;
 	height: 50px;
 	margin: auto;
@@ -445,6 +451,46 @@ button {
 	font-family: 'Roboto', sans-serif;
 	font-size: 26px;
 	cursor: pointer;
+}
+
+.msg {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: #3e679f;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.try {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #3e679f;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 90px;
+	cursor: pointer;
+}
+
+#form {
+	position: relative;
+}
+
+i {
+	font-size: 50px;
+	color: #3e679f;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#cargando {
+	display: none;
+	width: 300px;
+	margin: auto;
 }
 
 @media (max-width: 1880px) {
@@ -605,6 +651,10 @@ button {
 
 	.inner {
 		width: 800px;
+	}
+
+	#top_bar .inner {
+		width: 760px;
 	}
 
 	.icon {

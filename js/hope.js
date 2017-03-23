@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("form")[0].reset();
 	$("#main").click(function(){
 		$("#main_item_content").toggle();
 	});
@@ -53,6 +54,83 @@ $(document).ready(function(){
 		$("#main_item_content").hide();
 	});
 
+	$('.try').click(function(){
+		$('form').show();
+		$('.fa').hide();
+		$('.msg').hide();
+		$('.try').hide();
+		$('.msg').html("");
+		$('.try').html("");
+	});
+
+	function validaForm(){
+	    // Campos de texto
+	    if($("#nombre").val() == ""){
+	        alert("El campo Nombre no puede estar vacío.");
+	        $("#nombre").focus();       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
+	        return false;
+	    }
+	    if($("#mail").val() == ""){
+	        alert("El campo e-mail no puede estar vacío.");
+	        $("#nombre").focus();
+	        return false;
+	    }
+	    if($("#subject").val() == ""){
+	        alert("El campo asunto no puede estar vacío.");
+	        $("#nombre").focus();
+	        return false;
+	    }
+	    if($("#area_message").val() == ""){
+	        alert("El campo mensaje no puede estar vacío.");
+	        $("#nombre").focus();
+	        return false;
+	    }
+    	return true;
+	}
+
+	$('.send-button').click(function(e){
+		e.preventDefault();
+		var data = $('form').serializeArray();
+		$("#cargando").show();
+		if (validaForm()) {
+			$.ajax({
+			url: '../mail.php',
+			type: 'post',
+			dataType: 'json',
+			data: data,
+			beforeSend: function() {
+				$('form').css('display', 'none');
+			}
+		})
+		.done(function(data){  //true
+			console.log(data.response);
+			if(data.response == true){
+				//si se envio
+				$('.msg').html("Tu mensaje ha sido enviado");
+			}else{
+				//no se envio
+				$('.msg').html("Mensaje no enviado");
+				$('.try').html("Intentar de nuevo");
+				$('.msg').show();
+				$('.try').show();
+			}
+			$("#cargando").hide();
+		})
+		.fail(function(){  //false
+			$('.msg').html("Mensaje no enviado");
+			$('.try').html("Intentar de nuevo");
+			$('form').show();
+			$("#cargando").hide();
+		})
+		.always(function(){
+			$("#cargando").hide();
+		});
+		}
+		$("form")[0].reset();
+	});
+
+
+
 	/*$("#erp").click(function(){
 		$("#two_content, .item_content, #title_job").hide();
 		$("#tipe, .fa").fadeIn(2000);
@@ -80,7 +158,7 @@ $(document).ready(function(){
 	$("#back").click(function(){
 		$("#two_content, .item_content, #title_job").fadeIn(2000);
 		$("#tipe").hide(); 
-	});*/
+	});*/ 
 });
 
 
