@@ -90,6 +90,7 @@ $(document).ready(function(){
 
 	$('.send-button').click(function(e){
 		e.preventDefault();
+		$('form').hide();
 		var data = $('form').serializeArray();
 		$("#cargando").show();
 		if (validaForm()) {
@@ -113,14 +114,12 @@ $(document).ready(function(){
 				$('.try').html("Intentar de nuevo");
 				$('.msg').show();
 				$('.try').show();
-				$('form').hide();
 			}
 			$("#cargando").hide();
 		})
 		.fail(function(){  //false
 			$('.msg').html("Mensaje no enviado");
 			$('.try').html("Intentar de nuevo");
-			$('form').show();
 			$("#cargando").hide();
 		})
 		.always(function(){
