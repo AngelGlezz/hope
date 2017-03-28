@@ -8,6 +8,64 @@
 	$email = $_POST['mail'];
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
+	$message_html = '<!DOCTYPE html>
+					<html>
+					<head>
+						<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+						<meta http-equiv="content-type" content="text/html; charset=utf-8">
+						<style type="text/css">
+							.top {
+								width: 500px;
+								margin: 20px auto;
+							}
+
+							.top img {
+								width: 100%;
+								margin: auto;
+							}
+
+							.content {
+								width: 500px;
+								margin: auto;
+							}
+
+							.saludo {
+								font-size: 20px;
+								color: #3e679f;
+								margin: 20px auto;
+							}
+
+							.mensaje {
+								font-size: 18px;
+								color: #3e679f;
+								margin: 10px auto;
+							}
+
+							.copi {
+								font-size: 12px;
+								color: #525151;
+							}
+
+							@media (max-width: 500px) {
+								.top {
+									width: 70%;
+								}
+							}
+						</style>
+					</head>
+					<body>
+						<div class="mail">
+							<div class="top">
+								<img src="cid:hope">
+							</div>
+							<div class="content">
+								<div class="saludo">Hola, ' . $name . '</div>
+								<div class="mensaje">Mensaje:<br>'. $message . '</div>
+								<div class="copi">Es una copia del mensaje que enviaste a HopeSistemas</div>
+							</div>
+						</div>
+					</body>
+					</html>';
 
 	//$mail->SMTPDebug = 3;                               	// Enable verbose debug output
 
@@ -28,11 +86,12 @@
 
 	//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 	//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-	$mail->isHTML(true);                                  // Set email format to HTML
+	$mail->isHTML(true);
+	$mail->AddEmbeddedImage('images/hope.png', 'hope', 'hope.png');                                  // Set email format to HTML
 
 	$mail->Subject = $subject;
-	$mail->Body    = $message;
-	$mail->AltBody = $message;
+	$mail->Body    = $message_html;
+	$mail->AltBody = $message . " Es es una copia del mensaje recibido por HopeSistemas.";
 
 	//var_dump($mail->send());
 	if(!$mail->send()) {
@@ -41,7 +100,6 @@
 	    $response = ["response" => false];
 	} else {
 	    //echo 'Message has been sent';
-
 	    $response = ["response" => true];
 	}
 
