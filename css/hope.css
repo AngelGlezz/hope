@@ -1362,11 +1362,9 @@ i {
 	#subtitle {
 		margin-bottom: 10px;
 	}
-}
 
-@media (max-height: 390px) and (max-width: 667px) {
 	#cover {
-	    height: 190%;
+	    height: 210%;
 	}
 }
 
