@@ -25,8 +25,7 @@
 	background-color: #fefefe;
 }
 
-#top_bar .inner {
-	height: 100%;
+#top_bar > .inner {
 	position: relative;
 }
 
@@ -854,7 +853,7 @@ i {
 	}
 
 	#top_bar .inner {
-	    width: 560px;
+	    width: 95%;
 	}
 
 	#content_icon {
@@ -1087,8 +1086,10 @@ i {
 
 @media (max-width: 500px) {
 	#logo {
-		left: 0px;
-		top: 30px;
+		float: none;
+		left: 0;
+		right: 0;
+		margin: 0px auto;
 	}
 
 	#main_content {
@@ -1106,7 +1107,7 @@ i {
 	#subtitle {
     	width: 280px;
     	margin-top: 20px;
-    	margin-bottom: 50px;
+    	margin-bottom: 30px;
 	}
 
 	.bold {
@@ -1342,18 +1343,24 @@ i {
 	}
 
 	#subtitle {
-	    margin-bottom: 45px;
+	    margin-bottom: 25px;
 	}
 }
 
 @media (max-height: 390px) and (max-width: 667px) {
 	#name {
 		width: 350px;
-		margin-bottom: 25px;
+		margin-bottom: 10px;
 	}
 
 	#subtitle {
-		margin-bottom: 25px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-height: 390px) and (max-width: 667px) {
+	#cover {
+	    height: 190%;
 	}
 }
 
