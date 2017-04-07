@@ -56,7 +56,7 @@
 
 #main_item_content {
 	width: 135px;
-	height: 170px;
+	height: 125px;
 	background-color: #fefefe;
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
@@ -114,6 +114,9 @@ img {
 	width: 982px;
 	height: 100px;
 	margin: auto;
+	color: #345b97;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .icon {
@@ -501,6 +504,11 @@ i {
 	font-weight: 300;
 	font-size: 21px;
 	font-style: italic;
+	font-family: 'Roboto', sans-serif;
+}
+
+#content_icon p {
+	font-weight: 700;
 }
 
 @media (max-width: 1880px) {
@@ -664,7 +672,7 @@ i {
 	}
 
 	#top_bar .inner {
-		width: 760px;
+		width: 660px;
 	}
 
 	.icon {
@@ -762,6 +770,11 @@ i {
 	    width: 700px;
 	}
 
+	.thin {
+		color: #345b97;
+		font-weight: 700;
+	}
+
 	.icon {
 	    margin: 0px 7px;
 	}
@@ -840,6 +853,10 @@ i {
 		width: 600px;
 	}
 
+	#top_bar .inner {
+	    width: 560px;
+	}
+
 	#content_icon {
 	    width: 350px;
 	    height: 155px;
@@ -847,6 +864,10 @@ i {
 
 	.icon {
 	    margin: 10px 7px;
+	}
+
+	.thin {
+		font-size: 18px;
 	}
 
 	#job {
@@ -946,7 +967,7 @@ i {
 	#logo {
 		width: 300px;
 		height: 35px;
-		top: 60px;
+		top: 30px;
 	}
 
 	#line {
@@ -970,7 +991,6 @@ i {
 
 	#subtitle {
     	width: 440px;
-    	font-size: 27px;
 	}
 
 	#content_icon {
@@ -1086,7 +1106,15 @@ i {
 	#subtitle {
     	width: 280px;
     	margin-top: 20px;
-    	font-size: 15px;
+    	margin-bottom: 50px;
+	}
+
+	.bold {
+		font-size: 24px;
+	}
+
+	.thin {
+		font-size: 14px;
 	}
 
 	#job {
@@ -1236,6 +1264,7 @@ i {
 @media (max-height: 610px) {
 	#cover {
 		background-size: 100% 110%;
+		height: 120%;
 	}
 
 	.icon {
@@ -1254,7 +1283,7 @@ i {
 
 	#logo {
 		left: 0px;
-		top: 30px;
+		top: 22px;
 	}
 
 	#main_content {
@@ -1269,12 +1298,20 @@ i {
 
 @media (max-height: 465px) {
 	#cover {
-		height: 120%;
+		height: 152%;
 	}
 
 	#subtitle {
 	    font-size: 13px;
 		margin-bottom: 0px;
+	}
+
+	.bold {
+		font-size: 25px;
+	}
+
+	.thin {
+    	font-size: 15px;
 	}
 
 	#title_job {
@@ -1296,6 +1333,27 @@ i {
 	.icon {
 	    width: 50px;
 	    height: 50px;
+	}
+}
+
+@media (max-height: 414px) and (max-width: 736px) {
+	#name {
+	    width: 400px;
+	}
+
+	#subtitle {
+	    margin-bottom: 45px;
+	}
+}
+
+@media (max-height: 390px) and (max-width: 667px) {
+	#name {
+		width: 350px;
+		margin-bottom: 25px;
+	}
+
+	#subtitle {
+		margin-bottom: 25px;
 	}
 }
 
