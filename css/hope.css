@@ -767,6 +767,11 @@ i {
 		background-color: #e0dfdd;
 	}
 
+	#cover {
+		background-image: url(../images/fondo_m.jpg);
+		background-size: 100% 100%;
+	}
+	
 	.inner {
 		width: 700px;
 	}
@@ -1270,7 +1275,6 @@ i {
 
 @media (max-height: 610px) {
 	#cover {
-		background-size: 100% 110%;
 		height: 120%;
 	}
 
@@ -1365,12 +1369,6 @@ i {
 
 	#cover {
 	    height: 210%;
-	}
-}
-
-@media (max-height: 736px) and (max-width: 414px) {
-	#cover {
-		background-size: 100% 100%;
 	}
 }
 
