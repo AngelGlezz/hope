@@ -1,45 +1,91 @@
 #page {
 	width: 100%;
+	overflow: hidden;
 }
 
 #cover {
 	width: 100%;
 	height: 100%;
 	background-image: url(../images/portada.png);
+	background-size: 100% 120%;
+	background-repeat: no-repeat;
 }
 
 .inner {
 	width: 1000px;
-	height: 100%;
 	margin: auto;
 }
 
 #top_bar {
 	width: 100%;
-	height: 150px;
+	height: 100px;
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 	background-color: #fefefe;
 }
 
+#top_bar > .inner {
+	position: relative;
+}
+
 #logo {
 	width: 455px;
 	height: 55px;
 	float: left;
-	position: relative;
+	position: absolute;
 	left: 0px;
-	top: 45px;
+	top: 20px;
+}
+
+#main_content {
+	width: 70px;
+	float: left;
+	position: absolute;
+	right: 0px;
+	top: 20px;
 }
 
 #main {
-	width: 85px;
-	height: 85px;
-	float: left;
-	position: relative;
-	left: 460px;
-	top: 32px;
+	width: 70px;
+	height: 70px;
 	cursor: pointer;
+	z-index: 1;
+}
+
+#main_item_content {
+	width: 135px;
+	height: 125px;
+	background-color: #fefefe;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+	padding-top: 10px;
+	display: none;
+	position: absolute;
+	right: 0px;
+}
+
+.item_main {
+	width: 120px;
+	text-align: center;
+	margin: 10px auto;
+	font-family: 'Roboto', sans-serif;
+	color: #525151;
+	font-size: 17px;
+	cursor: pointer;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #52515133;
+}
+
+#erp_item {
+	margin: 0px auto;
+}
+
+#contactanos {
+	margin: 0px auto;
+	padding-bottom: 0px;
+	border: none;
 }
 
 img {
@@ -48,7 +94,6 @@ img {
 
 #name {
 	width: 690px;
-	height: 280px;
 	margin: auto;
 	margin-top: 70px;
 }
@@ -56,12 +101,44 @@ img {
 #subtitle {
 	width: 690px;
 	font-family: 'Roboto', sans-serif;
-	margin: auto;
-	margin-top: 30px;
-	font-size: 32px;
+	margin: 30px auto;
+	font-size: 31px;
 	text-align: center;
-	color: #fefefe;
-	text-shadow: 1px 1px #666, 2px 2px #666, 3px 3px #666, 4px 4px #666;
+	color: #525151;
+	/*text-shadow: 0px 1px #666;*/
+	text-transform: uppercase;
+}
+
+#content_icon {
+	width: 982px;
+	height: 100px;
+	margin: auto;
+	color: #345b97;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#inner_icon {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+.icon {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 0px 13px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+#first {
+	margin-left: 0px;
+}
+
+#last {
+	margin-right: 0px;
 }
 
 #contact_content {
@@ -72,10 +149,10 @@ img {
 
 
 #contact {
-	width: 501px;
+	width: 518px;
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
-	color: #000;
+	color: #525151;
 	font-size: 40px;
 	padding-top: 25px;
 	font-weight: 300;
@@ -83,11 +160,13 @@ img {
 
 #content {
 	width: 100%;
-	height: 3200px;
 	background-image: url(../images/fondo.png);
 	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	padding-top: 50px;
 	position: relative;
+	overflow: hidden;
 }
 
 #job {
@@ -100,73 +179,77 @@ img {
 }
 
 #title_job {
-	width: 525px;
-	height: 40px;
+	width: 554px;
 	margin: auto;
 	color: #345b97;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 25px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 .item_content {
 	background-image: url(../images/palomita.png);
 	width: 500px;
-	height: 168px;
+	height: 180px;
 	float: left;
-	background-size: 100% 70%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	/*cursor: pointer;*/
 }
 
-#uno {
+#erp {
 	margin: auto;
 	float: none;
 }
 
 #two_content {
     width: 1050px;
-    height: 200px;
+    height: 160px;
     position: relative;
     left: -50px;
+    margin-top: 30px;
 }
 
-#izq {
+#industria {
 	margin-right: 50px;
 }
 
 .item_title {
-	width: 201px;
-	height: 20px;
+	width: 220px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 700;
 	color: #fff;
 	margin: auto;
-	position: relative;
-	top: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
+	line-height: 20px;
+	padding-top: 15px;
 }
 
 .item_text {
-	width: 340px;
-	height: 77px;
+	width: 300px;
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	margin-left: 150px;
+	margin-left: 140px;
 	color: #fff;
 	font-weight: 300;
 }
 
+#erp > .item_text {
+	margin-top: 0px;
+}
+
 #apps {
 	width: 100%;
-	height: 870px;
+	margin-bottom: 100px;
 }
 
 #content_apps {
 	width: 100%;
-	height: 95%;
+	height: 855px;
 }
 
 #line {
@@ -177,10 +260,18 @@ img {
 }
 
 .item_apps {
-	width: 460px;
-	height: 150px;
+	width: 46%;
+	height: 180px;
 	float: left;
-	margin: 30px 20px;
+	margin: 3% 2%;
+}
+
+.linea_a {
+	height: 135px;
+}
+
+.linea_c {
+	height: 130px;
 }
 
 .image_apps {
@@ -191,15 +282,15 @@ img {
 
 .text_content_apps {
 	width: 310px;
-	height: 130px;
 	float: left;
 	margin-left: 20px;
+	margin-bottom: 15px;
 }
 
 .title_apps {
 	width: auto;
 	font-family: 'Roboto', sans-serif;
-	font-size: 29px;
+	font-size: 28px;
 	margin-bottom: 10px;
 	color: #5c5b5b;
 }
@@ -207,7 +298,7 @@ img {
 .text_apps {
 	width: 310px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 15.45px;
 	color: #5c5b5b;
 }
 
@@ -298,14 +389,19 @@ img {
 
 .input, .input input, #message, #message textarea {
 	width: 860px;
+	height: 30px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 26px;
+	font-size: 16px;
 	color: #5c5b5b;
 	float: left;
 	text-align: center;
 }
 
-#message textarea {
+.input input {
+	font-weight: 300;
+}
+
+#message, #message textarea {
 	height: 200px;
 	text-align: left;
 }
@@ -317,7 +413,42 @@ img {
 	margin-top: 50px;
 }
 
-button {
+#tipe {
+	display: none;
+	width: 85%;
+	margin: 0px auto;
+	position: relative;
+}
+
+#title_tipe {
+	color: #345b97;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#intro_tipe, #complement_tipe {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+#back {
+	width: 50px;
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+}
+
+.button {
+	width: 130px;
+	height: 50px;
+	margin: auto;
+}
+
+.send-button {
 	width: 130px;
 	height: 50px;
 	margin: auto;
@@ -327,6 +458,62 @@ button {
 	border-radius: 20px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 26px;
+	cursor: pointer;
+}
+
+.msg {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: #3e679f;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.try {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #3e679f;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 90px;
+	cursor: pointer;
+}
+
+#form {
+	position: relative;
+}
+
+i {
+	font-size: 50px;
+	color: #3e679f;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#cargando {
+	display: none;
+	width: 100px;
+	margin: auto;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.thin {
+	font-weight: 300;
+	font-size: 21px;
+	font-style: italic;
+	font-family: 'Roboto', sans-serif;
+}
+
+#content_icon p {
+	font-weight: 700;
 }
 
 @media (max-width: 1880px) {
@@ -366,9 +553,824 @@ button {
 	}
 }
 
+@media (max-width: 1400px) {
+	#big_apps {
+		width: 650px;
+		height: 101px;
+	}
+}
 
+@media (max-width: 1300px) {
+	#big_apps {
+		width: 600px;
+		height: 94px;
+		top: 1440px;
+	}
+}
 
+@media (max-width: 1200px) {
+	#big_apps {
+		width: 550px;
+		height: 86px;
+	}
+}
 
+@media (max-width: 1100px) {
+	#big_apps {
+		width: 500px;
+		height: 79px;
+		top: 1440px;
+	}
+
+	#two_content {
+		width: 900px;
+		left: 0px;
+		margin: 20px auto;
+	}
+
+	#industria {
+    	margin-right: 20px;
+	}
+
+	.item_content {
+		width: 440px;
+		height: 160px;
+	}
+
+	.item_text {
+		margin-left: 115px;
+		width: 305px;
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 1000px) {
+	#big_apps {
+		width: 450px;
+		height: 75px;
+		top: 1263px;
+	}
+
+	.inner {
+		width: 900px;
+	}
+
+	.icon {
+		width: 90px;
+		height: 90px;
+		margin: 0px 12px;
+	}
+
+	.image_apps {
+		width: 100px;
+		height: 100px;
+	}
+
+	.text_content_apps {
+		width: 294px;
+	}
+
+	#pic {
+		width: 350px;
+	}
+
+	.item_title {
+		margin-left: 115px;
+	}
+
+	#exp_content {
+		width: 500px;
+		margin-left: 50px;
+	}
+
+	#job {
+		width: 900px;
+		margin-bottom: 50px;
+	}
+
+	#apps {
+		margin-bottom: 50px;
+	}
+
+	#interaction {
+		margin-top: 50px;
+	}
+
+	.input, .input input, #message, #message textarea {
+		width: 760px;
+	}
+
+	#content_icon {
+		width: 900px;
+	}
+}
+
+@media (max-width: 900px) {
+	#big_apps {
+		width: 400px;
+		height: 63px;
+		top: 1245px;
+	}
+
+	.inner {
+		width: 800px;
+	}
+
+	#top_bar .inner {
+		width: 660px;
+	}
+
+	.icon {
+		width: 75px;
+		height: 75px;
+	}
+
+	.image_apps {
+		width: 100px;
+		height: 100px;
+	}
+
+	.text_content_apps {
+		width: 248px;
+	}
+
+	.item_title {
+    	margin-left: 88px;
+	}
+
+	#pic {
+		width: 350px;
+	}
+
+	#exp_content {
+		width: 400px;
+		margin-left: 50px;
+	}
+
+	#job {
+		width: 800px;
+		height: 450px;
+		margin-bottom: 50px;
+	}
+
+	#title_job {
+		margin-bottom: 20px;
+	}
+
+	#apps {
+		margin-bottom: 50px;
+	}
+
+	#interaction {
+		margin-top: 50px;
+	}
+
+	.input, .input input, #message, #message textarea {
+		width: 660px;
+	}
+
+	#content_icon {
+	    width: 800px;
+	    height: 75px;
+	}
+
+	.item_content {
+	    width: 390px;
+	    height: 160px;
+	}
+
+	.item_text {
+		margin-left: 108px;
+		width: 264px;
+	}
+
+	.text_apps {
+		width: 248px;
+	}
+
+	.title_apps {
+		font-size: 19px;
+	}
+
+	#inter_text {
+		font-size: 20px;
+	}
+
+	.item_title {
+		left: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	#content {
+		background-image: none;
+		background-color: #e0dfdd;
+	}
+
+	#cover {
+		background-image: url(../images/fondo_m.jpg);
+		background-size: 100% 100%;
+	}
+	
+	.inner {
+		width: 700px;
+	}
+
+	#content_icon {
+	    width: 700px;
+	}
+
+	.thin {
+		color: #345b97;
+		font-weight: 700;
+	}
+
+	.icon {
+	    margin: 0px 7px;
+	}
+
+	#job {
+	    width: 700px;
+	    height: 450px;
+	    margin-bottom: 50px;
+	}
+
+	.item_content {
+	    width: 345px;
+	height: 140px;
+	}
+
+	.item_title {
+		left: 30px;
+		font-size: 16px;
+	}
+
+	.item_text {
+	    margin-left: 91px;
+	    width: 243px;
+	    font-size: 12px;
+	}
+
+	#content_apps {
+	    height: 1100px;
+	}
+
+	.item_title {
+    	margin-left: 62px;
+	}
+
+	.text_content_apps {
+	    width: 308px;
+	}
+
+	.item_apps {
+		height: 270px;
+	}
+
+	.linea_a {
+		height: 225px;
+	}
+
+	.linea_c {
+		height: 205px;
+	}
+
+	.text_apps {
+	    width: 308px;
+	}
+
+	#big_apps {
+	    width: 360px;
+	    height: 56px;
+	    top: 1450px;
+	}
+
+	#pic {
+	    width: 250px;
+	}
+
+	.input, .input input, #message, #message textarea {
+	    width: 560px;
+	}
+
+	#line {
+		width: 600px;
+	}
+}
+
+@media (max-width: 700px) {
+	.inner {
+		width: 600px;
+	}
+
+	#top_bar .inner {
+	    width: 95%;
+	}
+
+	#content_icon {
+	    width: 350px;
+	    height: 155px;
+	}
+
+	.icon {
+	    margin: 10px 7px;
+	}
+
+	.thin {
+		font-size: 18px;
+	}
+
+	#job {
+	    width: 600px;
+	    height: 620px;
+	    margin-bottom: 50px;
+	}
+
+	.text_apps {
+	    width: 257px;
+	}
+
+	.text_content_apps {
+	    width: 255px;
+	}
+
+	.item_content {
+	    width: 390px;
+	    height: 150px;
+	    margin-top: 30px;
+	}
+
+	#content_apps {
+	    height: 1200px;
+	}
+
+	#big_apps {
+	    top: 1700px;
+	    width: 290px;
+	}
+
+	#pic {
+	    float: none;
+	    margin: auto;
+	}
+
+	.input, .input input, #message, #message textarea {
+	    width: 460px;
+	}
+
+	#name {
+	    width: 600px;
+	    margin: 45px auto;
+	}
+
+	#subtitle {
+		width: 600px;
+		font-size: 27px;
+	}
+
+	#two_content {
+	    width: 390px;
+	    height: 360px;
+	    position: initial;
+	    margin: auto;
+	}
+
+	.item_text {
+    	margin-left: 105px;
+	}
+
+	.item_title {
+    	margin-left: 75px;
+	}
+
+	.item_apps {
+		height: 285px;
+	}
+
+	.linea_a {
+	    height: 245px;
+	}
+
+	.linea_c {
+	    height: 220px;
+	}
+
+	#exp_title {
+		margin: auto;
+	}
+
+	#exp_text {
+		width: 400px;
+		margin: auto;
+	}
+
+	#experience {
+		height: 750px;
+		padding-top: 0px;
+	}
+
+	#exp_content {
+		margin: auto;
+		float: none;
+	}
+
+	#logo {
+		width: 300px;
+		height: 35px;
+		top: 30px;
+	}
+
+	#line {
+		width: 500px;
+	}
+
+	#title_job {
+		font-size: 17px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.inner {
+		width: 500px;
+	}
+
+	#name {
+    	width: 500px;
+	}
+
+	#subtitle {
+    	width: 440px;
+	}
+
+	#content_icon {
+    	margin: 20px auto;
+	}
+
+	#job {
+		width: 450px;
+	}
+
+	#title_job {
+    	width: 450px;
+    }
+
+    .text_apps {
+	    width: 212px;
+	}
+
+	.text_content_apps {
+	    width: 212px;
+	}
+
+	.item_apps {
+	    height: 330px;
+	}
+
+	.linea_a {
+	    height: 265px;
+	}
+
+	.linea_c {
+	    height: 220px;
+	}
+
+	.linea_d {
+		height: 285px;
+	}
+
+    #big_apps {
+	    top: 1700px;
+	    width: 230px;
+	    height: 37px;
+	}
+
+	#inter_text {
+	    font-size: 16px;
+	}
+
+	#interaction {
+		height: 100px;
+		padding-top: 20px;
+	}
+
+	.input, .input input, #message, #message textarea {
+	    width: 300px;
+	}
+
+	#message, #message textarea {
+	    height: 100px;
+	    text-align: center;
+	}
+}
+
+@media (max-height: 800px) {
+	#subtitle {
+		margin-top: 0px;
+	}
+
+	#name {
+		margin-bottom: 0px;
+	}
+}
+
+@media (max-height: 730px) {
+	#name {
+		width: 400px;
+	}
+
+	#subtitle {
+		font-size: 20px;
+	}
+}
+
+@media (max-height: 590px) {
+	#name {
+	    margin: 20px auto;
+	}
+
+	#content_icon {
+		margin: 5px auto;
+		height: 140px;
+	}
+}
+
+@media (max-width: 500px) {
+	#logo {
+		float: none;
+		left: 0;
+		right: 0;
+		margin: 0px auto;
+	}
+
+	#main_content {
+		display: none;
+	}
+
+	.inner {
+		width: 300px;
+	}
+
+	#name {
+	    width: 300px;
+	}
+
+	#subtitle {
+    	width: 280px;
+    	margin-top: 20px;
+    	margin-bottom: 30px;
+	}
+
+	.bold {
+		font-size: 24px;
+	}
+
+	.thin {
+		font-size: 14px;
+	}
+
+	#job {
+		width: 300px;
+		height: 530px;
+	}
+
+	#title_job {
+    	width: 300px;
+    }
+
+    #contact {
+    	font-size: 23px;
+    }
+
+    .icon {
+	    width: 63px;
+	    height: 63px;
+	}
+
+	#content_icon {
+		width: 313px;
+	}
+
+	#title_job {
+	    font-size: 18px;
+	    margin-bottom: 20px;
+	}
+
+	.item_content {
+	    width: 300px;
+	    height: 120px;
+	}
+
+	.item_title {
+	    font-size: 12px;
+	    margin-bottom: 5px;
+	    margin-left: 60px;
+	    width: 174px;
+	    line-height: 15px;
+	}
+
+	.item_text {
+	    margin-left: 90px;
+	    width: 202px;
+	    font-size: 10px;
+	}
+
+	#erp > .item_text {
+    	margin-top: -6px;
+	}
+
+	#line {
+		width: 300px;
+	}
+
+	.item_apps {
+	    width: 100%;
+	    float: none;
+	    margin: 10px auto;
+	}
+
+	.text_content_apps {
+		width: 220px;
+
+	}
+
+	#big_apps {
+	    top: 650px;
+	    width: 180px;
+	    height: 29px;
+	}
+
+	#content_apps {
+		height: 2000px;
+	}
+
+	.title_apps {
+	    font-size: 21px;
+	}
+
+	#exp_content, #exp_text {
+		width: 300px;
+		font-size: 16px;
+	}
+
+	#experience {
+	    height: 690px;
+	    padding-top: 0px;
+	}
+	
+	#inter_text {
+	    font-size: 13px;
+	}
+
+	#contact_form {
+		margin-top: 50px;
+	}
+
+	.input, .input input, #message, #message textarea {
+	    width: 190px;
+	    font-size: 14px;
+	}
+
+	.label {
+		font-size: 20px;
+		width: 90px;
+	}
+
+	#contact_content {
+		height: 75px;
+	}
+
+	#top_bar {
+		height: 100px;
+	}
+
+	#two_content {
+    	width: 300px;
+    	height: 360px;
+	}
+}
+
+@media (max-width: 500px) and (max-height: 465px) {
+	#cover {
+		height: 150%;
+	}
+
+	#subtitle {
+    	font-size: 16px;
+    	margin-top: 0px;
+	}
+}
+
+@media (max-width: 640px) and (max-height: 430px) {
+	.icon {
+	    width: 60px;
+	    height: 60px;
+	    margin: 5px 7px;
+	}
+
+	#content_icon {
+    	width: 289px;
+	}
+}
+
+@media (max-height: 610px) {
+	#cover {
+		height: 120%;
+	}
+
+	.icon {
+	    width: 60px;
+	    height: 60px;
+	    margin: 5px 7px;
+	}
+
+	#content_icon {
+	    width: 289px;
+	}
+
+	#top_bar {
+		height: 100px;
+	}
+
+	#logo {
+		left: 0px;
+		top: 22px;
+	}
+
+	#main_content {
+		right: 0px;
+		top: 15px;
+	}
+
+	#name {
+		width: 300px;
+	}
+}
+
+@media (max-height: 465px) {
+	#cover {
+		height: 152%;
+	}
+
+	#subtitle {
+	    font-size: 13px;
+		margin-bottom: 0px;
+	}
+
+	.bold {
+		font-size: 25px;
+	}
+
+	.thin {
+    	font-size: 15px;
+	}
+
+	#title_job {
+	    font-size: 17px;
+	}
+}
+
+@media (max-height: 390px) {
+	#name {
+	    width: 200px;
+	    margin-bottom: 0px;
+	}
+
+	#content_icon {
+		width: 251px;
+		height: 115px;
+	}
+
+	.icon {
+	    width: 50px;
+	    height: 50px;
+	}
+}
+
+@media (max-height: 414px) and (max-width: 736px) {
+	#name {
+	    width: 400px;
+	}
+
+	#subtitle {
+	    margin-bottom: 25px;
+	}
+}
+
+@media (max-height: 390px) and (max-width: 667px) {
+	#name {
+		width: 350px;
+		margin-bottom: 10px;
+	}
+
+	#subtitle {
+		margin-bottom: 10px;
+	}
+
+	#cover {
+	    height: 210%;
+	}
+}
 
 
 

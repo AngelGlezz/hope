@@ -1,7 +1,10 @@
 <html>
  	<head>
  		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
-		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="Title" content="HopeSistemas">
+		<meta name="Description" content="Texto que describe el contenido de la pagina">
+		<meta name="Keywords" content="programación, desarrollo, sistemas, erp, crm, hope">
 		<style>
 			html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -14,10 +17,23 @@
 				width: auto;
 			}  
 		</style>
+		<title>HopeSistemas</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/hope.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type="text/javascript" src="js/hope.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+		<script src="https://use.fontawesome.com/8b12d15fcf.js"></script>
+		<link rel="shortcut icon" type="image/png" href="/images/favicon.ico"/>
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-98095196-1', 'auto');
+			  ga('send', 'pageview');
+		</script>
  	</head>
  	<body>
  		<div id="page">
@@ -25,12 +41,34 @@
  				<div id="top_bar">
  					<div class="inner">
 		 				<div id="logo"><img src="images/hope.png"></div>
-		 				<div id="main"><img src="images/menu.png"></div>
+		 				<div id="main_content">
+		 					<div id="main"><img src="images/menu.png"></div>
+		 					<div id="main_item_content">
+		 						<div class="item_main" id="erp_item">SIS. A LA MED</div>
+		 						<div class="item_main" id="aplicaciones">APLICACIONES</div>
+		 						<!--<div class="item_main" id="experiencia">EXPERIENCIA</div>-->
+		 						<div class="item_main" id="contactanos">CONTÁCTANOS</div>
+		 					</div>
+		 				</div>
+		 				
 	 				</div>
 	 			</div>
 	 			<div class="inner">
 	 				<div id="name"><img src="images/nombre.png"></div>
-	 				<div id="subtitle">INGENIERO EN SISTEMAS COMPUTACIONALES /DESARROLLADOR/PROGRAMADOR</div>
+	 				<div id="subtitle"><p class="bold">Sistemas a la medida de tu negocio.</p><p class="thin">El sistema se adapta a tu negocio y resuelve tus problemas.</p><p class="thin">Todos los sistemas incluyen facturación electrónica</p></div>
+	 				<div id="content_icon">
+	 					<div id="inner_icon">
+	 						<img class="icon" id="first" src="images/erp.png" title="Sistemas a la medida">
+		 					<img class="icon apli" src="images/restaurante.png" title="Restaurantes">
+		 					<img class="icon apli" src="images/billar.png" title="Billar">
+		 					<img class="icon apli" src="images/parking.png" title="Estacionamiento">
+		 					<img class="icon apli" src="images/dental.png" title="Consultorio médico y dental">
+		 					<img class="icon apli" src="images/venta.png" title="Punto de venta">
+		 					<img class="icon apli" src="images/escuela.png" title="Admon. Escuela">
+		 					<img class="icon apli" id="last" src="images/internet.png" title="Café internet">
+	 					</div>
+	 					
+	 				</div>
 	 			</div>
  			</div>
  			<div id="contact_content">
@@ -40,21 +78,29 @@
 	 		</div>
  			<div id="content">
 	 			<div id="job">
-	 				<div id="title_job">MI TRABAJO HABLA POR MÍ</div>
-	 				<div class="item_content" id="uno">
-	 					<div class="item_title">TRABAJO COMPLETO</div>
-	 					<div class="item_text">Death does not wait for you to be ready! Death is not considerate of fair! And make no mistake, here you face death. Tiger. Jujitsu. Panther.
+	 				<div id="tipe">
+	 					<div id="title_tipe"></div>
+	 					<div id="content_tipe">
+	 						<p id="intro_tipe"></p><br>
+	 						<p id="complement_tipe"></p>
+	 					</div>
+	 					<div id="back"><img src="images/flecha.png"></div>
+	 				</div>
+	 				<div id="title_job">SOLUCIONO LOS PROBLEMAS DE TU EMPRESA Y ADAPTO LO SISTEMAS A TUS NECESIDADES</div>
+	 				<div class="item_content" id="erp">
+	 					<div class="item_title">Sistemas a la medida</div>
+	 					<div class="item_text">Desarrollo de programas hechos a la medida para el control y administración de recursos de la empresa, incluyendo sus procesos para mejorar las relaciones y ventas con los clientes.
 						</div>
 	 				</div>
 	 				<div id="two_content">
-	 					<div class="item_content dos" id="izq">
-		 					<div class="item_title">TRABAJO COMPLETO</div>
-		 					<div class="item_text">Death does not wait for you to be ready! Death is not considerate of fair! And make no mistake, here you face death. Tiger. Jujitsu. Panther.
+	 					<div class="item_content dos clearfix" id="industria">
+		 					<div class="item_title">Industria de Fabricación y Transformación</div>
+		 					<div class="item_text">ERP que administra y controla todas las áreas: compras, cotizaciones y pedidos del cliente, almacén MP, órdenes de producción, empacado, embarques, etc.
 							</div>
 		 				</div>
-		 				<div class="item_content dos" id="der">
-		 					<div class="item_title">TRABAJO COMPLETO</div>
-		 					<div class="item_text">Death does not wait for you to be ready! Death is not considerate of fair! And make no mistake, here you face death. Tiger. Jujitsu. Panther. 
+		 				<div class="item_content dos clearfix" id="valuaciones">
+		 					<div class="item_title">Valuaciones de Daños de Seguros</div>
+		 					<div class="item_text">Registro de casos, bitácoras, control de asesores técnicos, facturación electrónica, cobranza, tesorería, contabilidad, reportes varios, etc.
 							</div>
 		 				</div>
 	 				</div>
@@ -63,59 +109,59 @@
  					<div class="inner">
  						<div id="line"></div>
  						<div id="content_apps">
- 							<div class="item_apps">
- 								<div class="image_apps"><img src="images/restaurante.png"></div>
+ 							<div class="item_apps linea_a clearfix">
+ 								<div class="image_apps clearfix"><img src="images/restaurante.png"></div>
  								<div class="text_content_apps">
  									<div class="title_apps">RESTAURANTES</div>
- 									<div class="text_apps">Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren't we, Bruce? Members of the League of Shadows. And you betrayed us.
+ 									<div class="text_apps"><p>Administración y control de comandas, cocina, caja, facturación electrónica, corte de caja, asistencia, inventarios, reservaciones, lista de espera, reportes varios, etc.</p>
  									</div>
  								</div>
  							</div>
- 							<div class="item_apps">
- 								<div class="image_apps"><img src="images/billar.png"></div>
+ 							<div class="item_apps linea_a clearfix">
+ 								<div class="image_apps clearfix"><img src="images/billar.png"></div>
  								<div class="text_content_apps">
  									<div class="title_apps">BILLAR</div>
- 									<div class="text_apps">Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren't we, Bruce? Members of the League of Shadows. And you betrayed us.
+ 									<div class="text_apps"><p>Control y asignación de mesas, cobro de tiempo, venta de extras (comida y otros), control de caja, cierre de caja, reportes varios, etc.</p>
  									</div>
  								</div>
  							</div>
- 							<div class="item_apps">
- 								<div class="image_apps"><img src="images/parking.png"></div>
+ 							<div class="item_apps clearfix">
+ 								<div class="image_apps clearfix"><img src="images/parking.png"></div>
  								<div class="text_content_apps">
  									<div class="title_apps">ESTACIONAMIENTO</div>
- 									<div class="text_apps">Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren't we, Bruce? Members of the League of Shadows. And you betrayed us.
+ 									<div class="text_apps"><p>Control de entrada y salida de autos por hora, pensionados, contratos de servicio, pensión de un día o una noche, de fin de semana, de 24 horas, lavadas, enceradas, caja, corte de caja, corte mensual, facturación electrónica, control de papelería, etc.</p>
  									</div>
  								</div>
  							</div>
- 							<div class="item_apps">
- 								<div class="image_apps"><img src="images/dental.png"></div>
+ 							<div class="item_apps clearfix">
+ 								<div class="image_apps clearfix"><img src="images/dental.png"></div>
  								<div class="text_content_apps">
- 									<div class="title_apps">CONSULTORIO DENTAL</div>
- 									<div class="text_apps">Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren't we, Bruce? Members of the League of Shadows. And you betrayed us.
+ 									<div class="title_apps">CONSULTORIO MÉDICO Y DENTAL</div>
+ 									<div class="text_apps"><p>Control de consultas, registro de diagnósticos, recetas, procedimientos, clientes y dependientes económicos, estado de cuenta por cliente o por dependiente, cobranza, reporte de deudores, facturación electrónica, etc.</p>
  									</div>
  								</div>
  							</div>
- 							<div class="item_apps">
- 								<div class="image_apps"><img src="images/venta.png"></div>
+ 							<div class="item_apps linea_c clearfix">
+ 								<div class="image_apps clearfix"><img src="images/venta.png"></div>
  								<div class="text_content_apps">
  									<div class="title_apps">PUNTOS DE VENTA</div>
- 									<div class="text_apps">Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren't we, Bruce? Members of the League of Shadows. And you betrayed us.
+ 									<div class="text_apps"><p>Administración de tu negocio con una caja de venta, impresion de tickets, reportes, facturación electrónica, etc.</p>
  									</div>
  								</div>
  							</div>
- 							<div class="item_apps">
- 								<div class="image_apps"><img src="images/escuela.png"></div>
+ 							<div class="item_apps linea_c clearfix">
+ 								<div class="image_apps clearfix"><img src="images/escuela.png"></div>
  								<div class="text_content_apps">
- 									<div class="title_apps">ESCUELAS ADMON.</div>
- 									<div class="text_apps">Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren't we, Bruce? Members of the League of Shadows. And you betrayed us.
+ 									<div class="title_apps"> ADMON. DE ESCUELAS</div>
+ 									<div class="text_apps"><p>Cobranza, control de salones, alumnos, colegiaturas, listas de deudores, comunicación bancaria por depósitos, etc.</p>
  									</div>
  								</div>
  							</div>
- 							<div class="item_apps">
- 								<div class="image_apps"><img src="images/internet.png"></div>
+ 							<div class="item_apps linea_d clearfix">
+ 								<div class="image_apps clearfix"><img src="images/internet.png"></div>
  								<div class="text_content_apps">
  									<div class="title_apps">CAFÉ INTERNET</div>
- 									<div class="text_apps">Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren't we, Bruce? Members of the League of Shadows. And you betrayed us.
+ 									<div class="text_apps"><p>Control y asignación de computadoras, control y cobro de tiempo, apagado automático de computadoras, control de impresiones, control de caja, cierre de caja, reportes varios, etc.</p>
  									</div>
  								</div>
  							</div>
@@ -123,7 +169,7 @@
  						</div>
  					</div>
  				</div>
- 				<div id="experience">
+ 				<!--<div id="experience">
  					<div class="inner">
  						<div id="pic"><img src="images/cara.png"></div>
  						<div id="exp_content">
@@ -133,10 +179,10 @@
 	 						</div>
  						</div>
  					</div>
- 				</div>
+ 				</div>-->
  				<div id="interaction">
 	 				<div class="inner">
-	 					<div id="inter_text"><span>Interactua en cualquier momento conmigo</span> a través de la sección de contacto, donde puedes dejarme un saludo, comentario, crítica o propuesta de trabajo.<span>Simplemente pásate por la sección de contacto.</span></div>
+	 					<div id="inter_text"><span>Interactua en cualquier momento conmigo</span> a través de la sección de contacto, donde puedes dejarme un saludo, comentario, crítica o propuesta de trabajo.<span> Si deseas una atención más personalizada, no dudes en enviarme un mensaje al 044 55 29 21 34 10</span></div>
 	 				</div>
  				</div>
  				<div id="contact_form">
@@ -145,26 +191,47 @@
  							<form>
  								<div class="cont_data">
 	 								<div class="label">NOMBRE</div>
-	 								<div class="input"><input type="text" name="name" placeholder="Escribe tu nombre completo"></div>
+	 								<div class="input"><input type="text" name="name" id="nombre" placeholder="Escribe tu nombre completo"></div>
  								</div>
  								<div class="cont_data">
 	 								<div class="label">E-MAIL</div>
-	 								<div class="input"><input type="mail" name="mail" placeholder="Escribe tu correo electrónico"></div>
+	 								<div class="input"><input type="mail" name="mail" id="mail" placeholder="Escribe tu correo electrónico"></div>
  								</div>
  								<div class="cont_data">
 	 								<div class="label">ASUNTO</div>
-	 								<div class="input"><input type="text" name="subject" placeholder="¿Qué puedo hacer por ti?"></div>
+	 								<div class="input"><input type="text" name="subject" id="subject" placeholder="¿Qué puedo hacer por ti?"></div>
  								</div>
  								<div class="cont_data">
 	 								<div class="label">MENSAJE</div>
-	 								<div id="message"><textarea placeholder="Escribe aquí con detalle tu mensaje o comentario"></textarea></div>
+	 								<div id="message"><textarea id="area_message" placeholder="Escribe aquí con detalle tu mensaje o comentario" name="message"></textarea></div>
  								</div>
- 								<div id="button"><button>Enviar</button></div>
+ 								<div class="button"><input type="submit" name="Enviar" class="button send-button" value="Enviar"></input></div>
  							</form>
+ 							<span class="msg"></span>
+ 							<span class="try"></span>
+ 							<div id="cargando"><img src="images/ajax-loader.gif"></div>
  						</div>
  					</div>
  				</div>
  			</div>
  		</div>
+ 		<!-- Google Code for mails enviados Conversion Page -->
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 854229717;
+		var google_conversion_language = "en";
+		var google_conversion_format = "3";
+		var google_conversion_color = "ffffff";
+		var google_conversion_label = "gL2ECJLK_XAQ1YWqlwM";
+		var google_remarketing_only = false;
+		/* ]]> */
+		</script>
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+		</script>
+		<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/854229717/?label=gL2ECJLK_XAQ1YWqlwM&amp;guid=ON&amp;script=0"/>
+		</div>
+		</noscript>
  	</body>
  </html>
